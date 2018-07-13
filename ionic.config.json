@@ -1,0 +1,8 @@
+{
+  "name": "myDJ",
+  "app_id": "320559ab",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
