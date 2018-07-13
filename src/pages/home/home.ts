@@ -20,7 +20,7 @@ export class HomePage implements OnInit{
   }
 
   salas = SALAS;
-  
+    
   
 
   constructor(public navCtrl: NavController,private nativeAudio: NativeAudio) {
