@@ -26,6 +26,46 @@
         </ion-card>
       </div>
       
+      <h3>Mayor actividad</h3>
+    
+      <div class="horizontalDivs">
+    
+        <ion-card class="myCard" *ngFor="let sala of salas">
+          <ion-card-content >
+          <ion-card-title>
+              <ion-badge color="primary">{{sala.cancionesPedidas}}</ion-badge>
+            <ion-icon color="primary" name="musical-notes"></ion-icon>
+              
+            </ion-card-title>
+          <ion-img class="rankingImage" src="{{sala.image}}">
+              
+            </ion-img>        
+          
+        </ion-card-content>
+        </ion-card>
+      </div>
+      
+
+      <h3>Generos populares</h3>
+    
+      <div class="horizontalDivs">
+    
+        <ion-card class="myCard" *ngFor="let sala of salas">
+          <ion-card-content >
+          <ion-card-title>
+              <ion-badge color="primary">{{sala.generoMusical}}</ion-badge>
+            <ion-icon color="primary" name="bulbe"></ion-icon>
+              
+            </ion-card-title>
+          <ion-img class="rankingImage" src="{{sala.image}}">
+              
+            </ion-img>        
+          
+        </ion-card-content>
+        </ion-card>
+      </div>
+      
+
     </ion-content>
     
 
