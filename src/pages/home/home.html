@@ -4,32 +4,28 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  
 
-    <div text-center><h2>Salas activas</h2></div>
-    <div class="container" >
-          
-    <div class="box2" *ngFor="let sala of salas">
-    <ion-img class="rankingImage" src="{{sala.image}}"></ion-img>
-    </div>
-    </div>
-    <div text-center><h2>Ranking de salas</h2></div>
-    <div class="container" >
-          
-    <div class="box2" *ngFor="let sala of salas">
-    <ion-img class="rankingImage" src="{{sala.image}}"></ion-img>
-    </div>
-    </div>
+            
+  <ion-content>
+      <h3>Salas activas</h3>
     
+      <div class="horizontalDivs">
+    
+        <ion-card class="myCard" *ngFor="let sala of salas">
+          <ion-card-content >
+          <ion-card-title>
+              <ion-badge color="primary">{{sala.usuariosConectados}}</ion-badge>
+            <ion-icon color="primary" name="people"></ion-icon>
+              
+            </ion-card-title>
+          <ion-img class="rankingImage" src="{{sala.image}}">
+              
+            </ion-img>        
+          
+        </ion-card-content>
+        </ion-card>
+      </div>
+      
+    </ion-content>
     
 
-    <div text-center><h2>Ranking de DJ's</h2></div>
-    <div class="container" >
-          
-    <div class="box2" *ngFor="let sala of salas">
-    <ion-img class="rankingImage" src="{{sala.image}}"></ion-img>
-    </div>
-    </div>
-    
-  </ion-content>
