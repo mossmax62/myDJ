@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
+import { SalaPage } from '../sala/sala';
+import { SmartAudio } from '../../providers/smart-audio/smart-audio';
+
 
 @Component({
   templateUrl: 'tabs.html'
@@ -10,10 +13,17 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
+  tab2Root = SalaPage;
+  //tab2Root = ContactPage;
   tab3Root = ContactPage;
 
-  constructor() {
+  constructor(public smartAudio: SmartAudio) {
 
   }
+
+  changeTab() {
+    //this.smartAudio.play('tabSwitch');
+    console.log("playing");
+
+}
 }

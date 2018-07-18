@@ -1,5 +1,5 @@
 <ion-tabs text-center>
-  <ion-tab [root]="tab1Root" tabTitle="Dashboard" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Salas" tabIcon="apps"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Mi cuenta" tabIcon="person"></ion-tab>
+  <ion-tab (ionSelect)="changeTab()" [root]="tab1Root" tabTitle="Dashboard" tabIcon="home"></ion-tab>
+  <ion-tab (ionSelect)="changeTab()" [root]="tab2Root" tabTitle="Salas" tabIcon="apps"></ion-tab>
+  <ion-tab (ionSelect)="changeTab()" [root]="tab3Root" tabTitle="Mi cuenta" tabIcon="person"></ion-tab>
 </ion-tabs>

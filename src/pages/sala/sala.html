@@ -1,0 +1,86 @@
+<!--
+  Generated template for the SalaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sala {{sala.nombre}} by {{sala.nombreDJ}} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-card>
+  <ion-card-title>
+
+  </ion-card-title>
+  <ion-card-content class="video">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5zRpRAD8Igw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+    <ion-card-title> <h3 style="color:aqua">Pedidos</h3></ion-card-title>
+    <ion-card-content>
+  <ion-list>
+    <ion-item *ngFor="let pedido of pedidos">
+        <ion-card>
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <ion-icon name="analytics" item-start></ion-icon>
+                          Ranking
+                          <ion-badge item-end>{{pedido.ranking}}</ion-badge>
+                      </ion-col>
+                      <ion-col>
+                          <ion-icon name="analytics" item-start></ion-icon>
+                          Votos
+                          <ion-badge item-end>{{pedido.votos}}</ion-badge>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col>
+                          <ion-icon name="analytics" item-start></ion-icon>
+                          Banda
+                          <ion-badge item-end>{{pedido.banda}}</ion-badge>
+                      </ion-col>
+                      <ion-col>
+                          <ion-icon name="analytics" item-start></ion-icon>
+                          Tema
+                          <ion-badge item-end>{{pedido.tema}}</ion-badge>
+                      </ion-col>
+                      <ion-col>
+                          <ion-icon name="analytics" item-start></ion-icon>
+                          Votos
+                          <ion-badge item-end>{{pedido.votos}}</ion-badge>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+    </ion-card-content>
+  </ion-card>
+    </ion-item>
+  </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+
+            <ion-card>
+                <ion-card-title>
+                  <h3 style="color:aqua">Chat</h3>
+                </ion-card-title>
+                <ion-card-content>
+                    <img src="{{image}}" />
+                </ion-card-content>
+              </ion-card>
+       
+         
+       
+
+</ion-content>

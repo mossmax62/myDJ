@@ -12,12 +12,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { SmartAudio } from '../providers/smart-audio/smart-audio';
+import { SalaPage } from '../pages/sala/sala';
+
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
     HomePage,
+    SalaPage,
     TabsPage
   ],
   imports: [
@@ -30,13 +34,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
+    SalaPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    NativeAudio
+    NativeAudio,
+    SmartAudio
   ]
 })
 export class AppModule {}
