@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { SalaPage } from '../sala/sala';
@@ -14,7 +13,6 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = SalaPage;
-  //tab2Root = ContactPage;
   tab3Root = ContactPage;
 
   constructor(public smartAudio: SmartAudio) {
@@ -22,7 +20,7 @@ export class TabsPage {
   }
 
   changeTab() {
-    //this.smartAudio.play('tabSwitch');
+    this.smartAudio.nativeAudio.play('tabSwitch');
     console.log("playing");
 
 }

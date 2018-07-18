@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { PEDIDOS } from '../../model/mock-pedidos';
+
 
 /**
  * Generated class for the SalaPage page.
@@ -9,7 +10,6 @@ import { PEDIDOS } from '../../model/mock-pedidos';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-sala',
   templateUrl: 'sala.html',

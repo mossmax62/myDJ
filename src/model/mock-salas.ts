@@ -5,4 +5,7 @@ export const SALAS : Sala[]=[
   { id: 2, image: 'assets/imgs/dj6.jpg', usuariosConectados:2670, generoMusical:'TECHNO', cancionesPedidas:1000 },
   { id: 3, image: 'assets/imgs/dj7.jpg', usuariosConectados:2101, generoMusical:'LATINA', cancionesPedidas:200 },
   { id: 4, image: 'assets/imgs/dj8.jpg', usuariosConectados:900, generoMusical:'Reageton', cancionesPedidas:3000 },
+  { id: 5, image: 'assets/imgs/fiesta1.jpg', usuariosConectados:2670, generoMusical:'TECHNO', cancionesPedidas:1000 },
+  { id: 6, image: 'assets/imgs/fiesta2.jpg', usuariosConectados:2101, generoMusical:'LATINA', cancionesPedidas:200 },
+  { id: 7, image: 'assets/imgs/fiesta3.jpg', usuariosConectados:900, generoMusical:'Reageton', cancionesPedidas:3000 },
 ];
